@@ -1,5 +1,39 @@
 <ion-view view-title="Groups">
   <ion-content>
-      <div>blablabal</div>
+    <form id="transaction-form">
+      <div class="list">
+        
+        <label class="item item-input item-select">
+          <div class="input-label">
+            Tipo de transação
+          </div>
+          <select id="type">
+            <option>Emprestei</option>
+            <option>Peguei emprestado</option>
+          </select>
+        </label>
+        
+        <label class="item item-input item-select">
+          <div class="input-label">
+            Membros do grupo
+          </div>
+          <select id="friend">
+            <option>Rafael</option>
+            <option>Bernardo</option>
+            <option>Braulio</option>
+          </select>
+        </label>
+        
+        <label class="item item-input">
+          <span class="input-label">Valor</span>
+          <input type="number">
+        </label>
+        
+        <button class="button button-full button-positive">
+          Salvar
+        </button>
+        
+      </div>
+    </form>
   </ion-content>
 </ion-view>
