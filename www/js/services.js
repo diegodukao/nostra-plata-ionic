@@ -1,21 +1,6 @@
-angular.module('starter.services', [])
+angular.module('starter.services', ['ngResource'])
 
-.factory('Friends', function() {
-    var friends = [{
-      id: 0,
-      name: "Fulano de Tal"
-    },{
-      id: 1,
-      name: "Beltrano da Silva"
-    },{
-      id: 2,
-      name: "Larisso"
-    }];
-    
-    return {
-      all: function() {
-        return friends;
-      }
-    };
-});
+.factory('Friends', function($resource) {
+    return $resource('http://127.0.0.1:5000/api/v1.0/group-members/1')
+})
 
