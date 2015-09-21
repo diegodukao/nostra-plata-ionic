@@ -11,11 +11,15 @@ angular.module('starter.services', [])
       id: 2,
       name: "Larisso"
     }];
-    
+
     return {
       all: function() {
         return friends;
-      }
+      },
+
+      get: function(id) {
+        return friends[id];
+      },
     };
 });
 
